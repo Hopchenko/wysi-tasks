@@ -41,6 +41,7 @@
     ],
     "import/newline-after-import": "error",
     "no-multiple-empty-lines": "error",
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
     "indent": [
       "error",
       2
@@ -58,7 +59,8 @@
     "FormData": true,
     "FileReader": true,
     "Blob": true,
-    "navigator": true
+    "navigator": true,
+    "alert": true
   },
   "parser": "babel-eslint"
 }

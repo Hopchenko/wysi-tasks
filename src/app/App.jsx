@@ -1,19 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import './App.scss';
 import store from './store';
-import Tasks from './views/tasks/Tasks';
+import Routes from './Routes';
 
 function App() {
   return (
     <Provider store={store}>
-      <Router>
-        <div className="App">
-          <Route path="/" exact component={Tasks} />
-        </div>
-      </Router>
+      <Link to="/">goals</Link>
+      <Link to="/goal-statistic">goal-statistic</Link>
+      <Link to="/map">map</Link>
+      <Link to="/user">user</Link>
+
+      <Routes />
     </Provider>
   );
 }
