@@ -41,7 +41,13 @@
     ],
     "import/newline-after-import": "error",
     "no-multiple-empty-lines": "error",
-    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
     "indent": [
       "error",
       2
@@ -50,7 +56,18 @@
       "error",
       "single"
     ],
-    "no-unused-expressions": "error"
+    "no-unused-expressions": "error",
+    "react/destructuring-assignment": false,
+    "react/button-has-type": false,
+    "react/prefer-stateless-function": false,
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "react/forbid-prop-types": [
+      "false"
+    ],
+    "spaced-comment": "off"
   },
   "globals": {
     "window": true,
